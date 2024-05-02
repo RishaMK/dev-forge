@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './components/Home';
+import Header from './components/Header';
+import './index.css'
+import About from './components/About';
+import Themes from './components/Themes';
+import Sponsors from './components/Sponsors';
+import FAQ from './components/FAQ';
+import Venue from './components/Venue';
+
+// ByteXync theme color: "text-white bg-gradient-to-bl from-pink/rose-950 to-fuchsia-950"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App max-w-screen bg-zinc-950 min-h-lvh max-h-full m-0 p-0 text-white">
+      <Header />
+      <hr />
+      <Home />
+      <About />
+      <Themes />
+      <Sponsors />
+      <FAQ />
+      <Venue />
     </div>
   );
 }
