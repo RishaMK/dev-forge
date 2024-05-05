@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
     return (
         <header>
-            <nav className='flex w-full justify-around gap-3 py-8 mb-10 bg-zinc-950/50'>
+            <nav className='flex w-full justify-around gap-3 py-8 mb-10 bg-zinc-950/80'>
                 {/* <img src="" alt='DevForge' className='w-16 mx-8' /> */}
                 <span className='text-5xl font-jaro'>DF</span>
                 <ul className='flex justify-center items-center gap-24 font-jaro'>

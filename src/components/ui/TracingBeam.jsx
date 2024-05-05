@@ -40,10 +40,15 @@ export const TracingBeam = ({
       damping: 180,
     }
   );
+
+  // setTimeout(() => {
+  //   ref.current.position = "relative";
+  // }, 4500);
+
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-3/4 mx-auto min-h-full", className)}
+      className={"relative w-3/4 mx-auto min-h-full"}
     >
       <div className="absolute -left-4 md:-left-20 top-10">
         <motion.div
@@ -117,6 +122,6 @@ export const TracingBeam = ({
         </svg>
       </div>
       <div ref={contentRef}>{children}</div>
-    </motion.div>
+    </motion.div >
   );
 };

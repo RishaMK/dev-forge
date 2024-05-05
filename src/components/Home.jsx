@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
     return (
         <>
-            <div className='flex gap-5 py-24 mb-10 justify-between items-center'>
+            <div className='flex gap-5 py-24 mb-14 justify-between items-center'>
                 <div className='flex flex-col gap-5'>
                     <h1 className='text-5xl text-wrap font-bold'>DevForge</h1>
                     <span className='mb-16'>Code, Create, Conquer!</span>

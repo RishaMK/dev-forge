@@ -51,7 +51,7 @@ const Timeline = () => {
 
     return (
         <div id='timeline' className='flex flex-col gap-20 mt-10'>
-            <h2 className='text-3xl font-bold'>Timeline</h2>
+            <h2 className='text-3xl font-bold'>TIMELINE</h2>
             <div className='flex flex-col justify-center my-4'>
                 {
                     timeline.map((event, index) => (

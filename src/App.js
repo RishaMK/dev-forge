@@ -12,25 +12,40 @@ import Countdown from './components/Countdown';
 import { TracingBeam } from './components/ui/TracingBeam';
 import Queries from './components/Queries';
 import Timeline from './components/Timeline';
+import PreLoader from './components/PreLoader';
+import { useState } from 'react';
 
 // ByteXync theme color: "text-white bg-gradient-to-bl from-pink/rose-950 to-fuchsia-950"
 
 function App() {
+
+  const [loading, setLoading] = useState(true)
+
+  setTimeout(() => {
+    setLoading(false)
+  }, 4500)
+
   return (
-    <div className="App max-w-screen bg-zinc-900 min-h-lvh max-h-full text-white">
-      <div className="h-full w-full bg-black bg-grid-small-white/[0.5] pb-12">
-        <Header />
-        <TracingBeam className='p-4'>
-          <Home />
-          <Countdown />
-          <About />
-          <Themes />
-          <Timeline />
-          <Venue />
-          <Sponsors />
-          <FAQ />
-          <Queries />
-        </TracingBeam>
+    <div className="App bg-zinc-900 min-h-lvh max-h-full text-white scrollbar-thin scrollbar-webkit">
+      <div className="h-full w-full bg-black bg-dot-green-400/[0.2] pb-12">
+        {
+          loading ?
+            <PreLoader />
+            : <>
+              <Header />
+              <TracingBeam className='p-4'>
+                <Home />
+                <Countdown />
+                <About />
+                <Themes />
+                <Timeline />
+                <Venue />
+                <Sponsors />
+                <FAQ />
+                <Queries />
+              </TracingBeam>
+            </>
+        }
       </div>
     </div>
   );

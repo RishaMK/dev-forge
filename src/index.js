@@ -2,12 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import PreLoader from './components/PreLoader';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <PreLoader />
+  <React.StrictMode className = "overflow-y-scroll no-scrollbar">
     <App />
   </React.StrictMode>
 );

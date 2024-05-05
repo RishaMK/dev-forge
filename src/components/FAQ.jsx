@@ -31,7 +31,7 @@ const FAQ = () => {
                 <span className='m-2'>
                   Q:&nbsp;&nbsp;{faq.question}
                 </span>
-                <FaCaretDown className='m-2' />
+                <FaCaretDown className={show === index ? `m-2 rotate-180`:`m-2`} />
               </div>
               {
                 show === index &&

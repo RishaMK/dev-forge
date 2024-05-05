@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 // import { RxDotFilled } from 'react-icons/rx'
 // import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import Marquee from 'react-fast-marquee'
